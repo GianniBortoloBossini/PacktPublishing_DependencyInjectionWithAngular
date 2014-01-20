@@ -1,0 +1,19 @@
+<p>This will show some history</p>
+
+<!--<p>This will show some history</p>-->
+
+<h2>All data</h2>
+<ul ng-repeat="value in historyData">
+  <li>{{ value.day }} : {{ value.temp }}</li>
+</ul>
+
+<h2>Temperatures greater than 15</h2>
+<ul ng-repeat="value in historyData | plusFifteen">
+  <li>{{ value.date | uppercase}} : {{ value.temp }}</li>
+</ul>
+
+<h2>Temperatures greater than ...</h2>
+Minimum temperature: <input ng-model='tempMin' type='number'/> Celcius
+<ul ng-repeat="value in historyData | minimum:tempMin">
+    <li>{{ value.date | uppercase}} : {{ value.temp }}</li>
+</ul>

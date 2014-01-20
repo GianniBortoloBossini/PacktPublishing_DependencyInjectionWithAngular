@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="tempApp">
+    <head>
+        <meta charset="utf-8">
+        <title>My AngularJS App</title>
+        <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+    </head>
+    <body>
+        <ul class="menu">
+        <li><a href="#/current">Current</a></li>
+        <li><a href="#/history">History</a></li>
+        <li><a href="#/chart">Chart</a></li>
+        </ul>
+        
+        <div ng-view></div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+        <script src="app/js/app.js"></script>
+        <script src="app/js/controllers.js"></script>
+        <script src="app/js/filters.js"></script>
+        <script src="app/js/directives.js"></script>
+    </body>
+</html>
